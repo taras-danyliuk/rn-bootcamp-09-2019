@@ -1,10 +1,13 @@
 import React from 'react';
+import codePush from "react-native-code-push";
 
 import { StackActions } from 'react-navigation';
 import Navigator from './navigation';
 
 
-export default class App extends React.Component {
+const codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME };
+
+class App extends React.Component {
   constructor(props) {
     super(props);
 
@@ -30,3 +33,5 @@ export default class App extends React.Component {
     />;
   }
 }
+
+export default codePush(codePushOptions)(App);

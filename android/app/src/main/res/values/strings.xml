@@ -1,3 +1,4 @@
 <resources>
+	<string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">5tgKe8R37zPEsvGh40-cdJKHssCvv-mDrfOvZ</string>
     <string name="app_name">rnBootcamp</string>
 </resources>
